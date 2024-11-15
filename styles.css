@@ -5,6 +5,8 @@ header, footer
 
 footer 
 {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -12,10 +14,29 @@ footer
 
 body { background-color: #37383a; margin: 0}
 
-h1, h2, p, img, .linkText
+h1, h2, h3, p, img, .linkText
 {
     color: white;
     padding-left: 25;
+}
+
+h3
+{
+    font-size: 25px;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+h4 span
+{
+    padding: 20px;
+    background-color: darkcyan;
 }
 
 ul 
