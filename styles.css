@@ -3,13 +3,18 @@ header, footer
     background-color: #202124;
 }
 
-footer 
+.landingFooter
 {
     position: fixed;
+}
+
+footer 
+{
     bottom: 0;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
+    box-shadow: 0 -5px 0 darkcyan;
 }
 
 body { background-color: #37383a; margin: 0}
