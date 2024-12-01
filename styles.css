@@ -1,0 +1,157 @@
+header, footer 
+{
+    background-color: #0D131C;
+}
+
+footer 
+{
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 -5px 0 darkcyan;
+}
+
+body { background-color: #172030; margin: 0}
+
+h1, h2, h3, p, img, .linkText
+{
+    color: white;
+    padding-left: 25;
+}
+
+h3
+{
+    font-size: 25px;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+h4 span
+{
+    padding: 20px;
+    background-color: darkcyan;
+}
+
+a
+{    
+    text-decoration: none;
+}
+
+ul 
+{  
+    list-style-type: none;
+    margin: 0;
+    padding-top: 25;
+    padding-bottom: 25;
+    padding-left: 0;
+}
+
+li
+{
+    display: inline;
+}
+
+.landingFooter
+{
+    position: fixed;
+}
+
+.linkText
+{
+    text-decoration: none;
+    font-size: 20;
+    padding-top: 29;
+    padding-bottom: 27px;
+    padding-left: 25;
+    padding-right: 25;
+}
+
+.linkText:hover {background-color: darkcyan;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: #0D131C;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: darkcyan;
+}
+
+.text {
+  color: #f2f2f2;
+  background-color: #0D131C;
+  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  background-color: #0D131C;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href = "styles.css">
+    <title>Portfolio Website - Web Projects</title>
+</head>
+
+<Header>
+    <ul>
+        <li><a class="linkText" href="index.html"> Homepage</a></li>
+        <li><a class="linkText" href="academic.html"> Academic Projects</a></li>
+        <li><a class="linkText" href="software.html"> Software Projects</a></li>
+        <li><a class="linkText" href="web.html"> Web Projects</a></li>
+    </ul>
+</Header>
+
+<body>
+    <h1> Web Projects </h1>
+    <h4> <span> Finance Tracking Web Application </span> </h4>
+    
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <div class="numbertext">1 / 3</div>
+            <img src="Images and Videos/facebookIcon.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides1">
+            <div class="numbertext">2 / 3</div>
+            <img src="Images and Videos/linkedIn.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides1">
+            <div class="numbertext">3 / 3</div>
+            <img src="Images and Videos/githubIcon.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+        <br>
+
+      </div>
+    <h3> 
+        Over the summer of 2024 I made a web application for university students to track their spending habits using React.
+        <br> User's can enter data about what they've bought which is then validated and added to a table that can be filtered. 
+        <br> The table summaries all the purchases and displays a total of all the money that has been spent.
+    </h3>
+    <h4> <span> My Programming Portfolio Website </span> </h4>
+
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <div class="numbertext">1 / 3</div>
+            <img src="Images and Videos/facebookIcon.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides2">
+            <div class="numbertext">2 / 3</div>
+            <img src="Images and Videos/linkedIn.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides2">
+            <div class="numbertext">3 / 3</div>
+            <img src="Images and Videos/githubIcon.png" style="width:100%; padding: 0">
+            <div class="text">Caption Text</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+        <br>
+      </div>
+
+
+    <h3> 
+        This very website! Made with HTML, CSS and JavaScript. I hope it's been an informative reflection of my work and skills 💙 
+    </h3>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}  
+            
+          if (n < 1) {slideIndex[no] = x.length}
+          
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+
+</body>
+
+<footer>
+    <h2> Where to Find Me and My Work: </h2>
+    <a style="padding: 0" href="https://www.facebook.com/profile.php?id=100090465120409" target="_blank">
+        <img src="Images and Videos/facebookIcon.png" style="width: 35px">
+    </a>
+    <a style="padding: 0" href="https://www.linkedin.com/in/elizabeth-wymer/" target="_blank">
+        <img src="Images and Videos/linkedIn.png" style="width: 35px">
+    </a>
+    <a style="padding: 0" href="https://github.com/ElizaWymer" target="_blank">
+        <img src="Images and Videos/githubIcon.png" style="width: 35px">
+    </a>
+    <p> Email Address: elizabethwymer2004@gmail.com </p>
+    <p> University Email Address: u2358216@unimail.hud.ac.uk </p>
+</footer>
+
+</html>
